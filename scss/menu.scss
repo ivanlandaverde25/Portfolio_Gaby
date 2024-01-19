@@ -8,17 +8,6 @@
     padding: 00px 40px;
     overflow: visible;
 
-    // &::before{
-    //     content: '';
-    //     display: block;
-    //     position: absolute;
-    //     min-width: 60%;
-    //     min-height: 60%;
-    //     color: var(--purpleSecondary);
-    //     bottom: 0;
-    //     left: 50%;
-    // }
-
     &-logo{
         width: 70px;
     }
@@ -52,7 +41,8 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    transition: .5s all ease-in-out;
+    transition: .5s all ease;
+    z-index: 9;
 }
 
 .menu-dropdown-toggle{

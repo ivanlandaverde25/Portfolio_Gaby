@@ -92,7 +92,8 @@ body {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease;
+  z-index: 9;
 }
 
 .menu-dropdown-toggle {
@@ -150,10 +151,12 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-  .menu-dropdown-toggle {
+  .menu-dropdown {
+    transition: 1s all ease-in-out;
     height: 100%;
+  }
+  .menu-dropdown-toggle {
     flex-flow: column nowrap;
-    z-index: 9;
   }
 }
 
