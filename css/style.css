@@ -17,6 +17,7 @@ body {
   --secondary: rgba(249, 229, 218, 1);
   --terciario: rgba(243, 209, 191, 1);
   --cuarto: rgba(231, 196, 178, 1);
+  --cuarto700: rgba(231, 196, 178, 0.7);
   --sombras: rgba(51, 51, 51, 0.5);
   --blackText: rgba(51, 51, 51, 1);
   --white900: rgba(255, 255, 255, 1);
@@ -86,7 +87,7 @@ body {
   color: var(--blackTextColor);
   top: -100%;
   left: 0;
-  background: var(--secondary);
+  background: var(--cuarto700);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -146,6 +147,19 @@ body {
 }
 .card-detail:hover {
   transform: scale(1.01);
+}
+
+@media screen and (max-width: 768px) {
+  .container-menu {
+    background: red;
+  }
+}
+@media screen and (max-width: 340px) {
+  .menu-dropdown-toggle {
+    height: 100%;
+    flex-flow: column nowrap;
+    z-index: 9;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

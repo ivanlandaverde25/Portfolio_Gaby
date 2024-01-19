@@ -17,10 +17,14 @@ body {
     --secondary: rgba(249, 229, 218, 1);
     --terciario: rgba(243, 209, 191, 1);
     --cuarto: rgba(231, 196, 178, 1);
+    --cuarto700: rgba(231, 196, 178, 0.7);
+
     --sombras: rgba(51, 51, 51, 0.5);
     --blackText: rgba(51, 51, 51, 1);
+
     --white900: rgba(255, 255, 255, 1);
     --white700: rgba(255, 255, 255, 0.7);
+
     --bordes: rgba(221, 221, 221, 1);
 }
 
@@ -38,3 +42,4 @@ body {
 @import "fonts";
 @import "menu";
 @import "home";
+@import "mediaQuery";

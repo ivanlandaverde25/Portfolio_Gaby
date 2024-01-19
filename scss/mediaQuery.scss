@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px){
+    .container-menu{
+        background: red;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .container-menu{
+        // background: green;
+    }
+
+    .menu-dropdown-toggle{
+        height: 100%;
+        flex-flow: column nowrap;
+        z-index: 9;
+    }
+}
