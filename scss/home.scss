@@ -1,0 +1,65 @@
+.container-image-home{
+    @include bg-image("../assets/images/Desktop/background-desktop.png");
+}
+
+// Estilos generales
+.main-container-home{
+    min-height: 90vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+
+    // Estilos de la descripción personal
+    &-description{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 9em;
+    }
+
+    // Estilos de la sección de detalles
+    &-details{
+        position: relative;
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template: 
+        "main-container-home-details-works main-container-home-details-contacts" 80vh/
+        auto auto;
+        column-gap: 40px;
+        padding: 10px 10px;
+    }
+
+    .main-container-home-details-works{
+        grid-area: main-container-home-details-works;
+    }
+
+    .main-container-home-details-contacts{
+        grid-area: main-container-home-details-contacts;
+    }
+
+}
+
+// Detalles generales de las tarjetas
+.card-detail{
+    border-radius: 5px;
+    border: 2px solid var(--bordes);
+    padding: 20px;
+    box-shadow: 0px 5px 8px 5px var(--sombras);
+    transition: 1s all ease;
+    background: linear-gradient(
+        45deg,
+        var(--cuarto),
+        var(--terciario),
+        var(--secondary)
+    );
+
+    &:hover{
+        transform: scale(1.01);
+    }
+}

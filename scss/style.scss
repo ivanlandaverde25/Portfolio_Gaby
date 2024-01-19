@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background: #333;
+    color: #333;
+}
+
+:root{
+    --purplePrimary: rgba(85, 91, 165, 1);
+    --purpleSecondary: rgba(132, 137, 206, 1);
+    --secondary: rgba(249, 229, 218, 1);
+    --terciario: rgba(243, 209, 191, 1);
+    --cuarto: rgba(231, 196, 178, 1);
+    --sombras: rgba(51, 51, 51, 0.5);
+    --blackText: rgba(51, 51, 51, 1);
+    --white900: rgba(255, 255, 255, 1);
+    --white700: rgba(255, 255, 255, 0.7);
+    --bordes: rgba(221, 221, 221, 1);
+}
+
+@mixin bg-image($url){
+    background: url(#{$url}) no-repeat center/cover;
+    // background-attachment: fixed;
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@import "fonts";
+@import "menu";
+@import "home";

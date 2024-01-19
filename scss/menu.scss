@@ -1,0 +1,61 @@
+.container-menu{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 00px 40px;
+    overflow: visible;
+
+    // &::before{
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     min-width: 60%;
+    //     min-height: 60%;
+    //     color: var(--purpleSecondary);
+    //     bottom: 0;
+    //     left: 50%;
+    // }
+
+    &-logo{
+        width: 70px;
+    }
+}
+
+.fa-solid{
+    font-size: 50px;
+    transition: .2s all ease;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+    position: fixed;
+    right: 2%;
+}
+
+.fa-solid:hover{
+    transform: scale(1.09);
+    transform: rotateZ(180deg);
+}
+
+// ESTILOS DE MENU DROPDOWN
+.menu-dropdown{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: var(--blackTextColor);
+    top: -100%;
+    left: 0;
+    background: var(--secondary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s all ease-in-out;
+}
+
+.menu-dropdown-toggle{
+    top: 0%;
+    position: fixed;
+}
