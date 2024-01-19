@@ -37,6 +37,25 @@ body {
     min-width: 100%;
     min-height: 100vh;
     overflow: hidden;
+    position: relative;
+}
+
+.fondo-principal{
+    position: absolute;
+    z-index: -1;
+}
+
+.fondo-principal::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(25px);
+    color: rgba(255,255,255,0.3);
+    z-index: 10;
+
 }
 
 @import "fonts";
